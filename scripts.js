@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded",function()
+document.addEventListener("DOMContentLoaded", function()
 {
     /**
      * @param {Event} e
      */
-}
+})
