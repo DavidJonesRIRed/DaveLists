@@ -20,18 +20,22 @@ document.addEventListener("DOMContentLoaded", function()
 
         //create elements
         const li = document.createElement("li");
+        const chkBx = document.createElement("span");
         const listItem = document.createElement("span");
         const deleteBtn = document.createElement("span");
 
         //add content
         deleteBtn.textContent = "delete";
         listItem.textContent = value;
+        chkBx.innerHTML="<input type='checkbox'>"
 
         //add classes
+        chkBx.classList.add("listDone");
         listItem.classList.add("name");
         deleteBtn.classList.add("delete");
         
         //append to DOC
+        li.appendChild(chkBx);
         li.appendChild(listItem);
         li.appendChild(deleteBtn);
         list.appendChild(li);
