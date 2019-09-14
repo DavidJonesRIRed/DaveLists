@@ -36,4 +36,14 @@ document.addEventListener("DOMContentLoaded", function()
         li.appendChild(deleteBtn);
         list.appendChild(li);
     });
+
+    //delete list item
+    list.addEventListener("click", function(e)
+    {
+        if(e.target.className == "delete")
+        {
+            const li = e.target.parentElement;
+            list.removeChild(li);
+        }
+    });
 })
