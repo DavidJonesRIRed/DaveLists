@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function()
         //add content
         deleteBtn.textContent = "delete";
         listItem.textContent = value;
-        chkBx.innerHTML="<input type='checkbox'>"
+        chkBx.innerHTML="<input type='checkbox'>done"
+        //chkBx.textContent="done";
 
         //add classes
         chkBx.classList.add("listDone");
