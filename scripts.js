@@ -3,8 +3,16 @@ document.addEventListener("DOMContentLoaded", function()
     /**
      * @param {Event} e
      */
+    var objListArray = 
+    {
+        listArray: [],
 
-     listArray = [];
+        addListArrayItem: function(listText)
+        {
+            this.todos.push({listText: listText,completed: false});
+        }
+    };
+     
 
      //get UL document element to work with
     const list =document.querySelector("#dave-list ul")
@@ -34,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function()
         chkBx.classList.add("listDone");
         listItem.classList.add("name");
         deleteBtn.classList.add("delete");
+        objListArray.addListArrayItem(value);
         
         //append to DOC
         li.appendChild(chkBx);
